@@ -19,14 +19,32 @@ NOtes is a lightweight personal knowledge tool that combines fast note‑taking 
 - Fast global search with filters for tags, dates, and content type.
 - Cross‑platform desktop app feel (keyboard shortcuts, theming).
 
-## Project structure (planned)
+## Tech stack
 
-This repository will grow into a small desktop/web hybrid app. Tentative layout:
+- **UI:** React + Vite + TypeScript
+- **State:** Zustand (lightweight global store)
+- **Routing:** React Router v6
+- **Tooling:** ESLint + Prettier + TypeScript
 
-- `app/` – frontend UI (likely React or Svelte with a component library).
+## Project structure (current)
+
+- `app/` – frontend UI shell (routing, layout, placeholder views).
 - `core/` – shared domain logic (notes, clipboard items, search indexing).
 - `server/` – sync API and persistence adapters (e.g., SQLite/local files, later remote sync).
 - `docs/` – design notes, UX flows, and architecture decisions.
+
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+Other scripts:
+
+- `npm run build` – production build
+- `npm run preview` – preview the production build
+- `npm run lint` – lint the UI source
 
 ## Getting started (current state)
 
